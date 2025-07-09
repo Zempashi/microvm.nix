@@ -200,8 +200,8 @@ lib.warnIf (mem == 2048) ''
     (if graphics.enable
      then [
       #"-display" "gtk,gl=on"
-      "-device" "virtio-gpu-rutabaga,gfxstream-vulkan=on,cross-domain=on,hostmem=8G,wayland-socket-path=/run/user/1000/wayland-0,wsi=headless"
-      #"-device" "virtio-gpu-gl,hostmem=8G,blob=true,venus=true"
+      #"-device" "virtio-gpu-rutabaga,gfxstream-vulkan=on,cross-domain=on,hostmem=8G,wayland-socket-path=/run/user/1000/wayland-0,wsi=headless"
+      "-device" "virtio-gpu-gl,hostmem=8G,blob=true,venus=true"
       "-device" "qemu-xhci"
       "-device" "usb-tablet"
       "-device" "usb-kbd"
